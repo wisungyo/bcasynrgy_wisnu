@@ -6,8 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title> Wisnu | a web designer </title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Profile, CV, Curriculum Vitae, Portfolio, Wisnu Agung Prasetyo">
+  <meta name="author" content="Wisnu Agung Prasetyo">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -26,6 +26,16 @@
   <link rel="stylesheet" href="dist/css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
+  <!-- Bootstrap CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css"> 
+  <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css">  -->
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -35,7 +45,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="dist/images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body class="code-snippets-visible">
@@ -47,7 +57,7 @@
       <!-- <br><br> -->
       <h5 class="myfont2 fontcolor">a web designer.</h5>
       <br>
-      <div class="">
+      <div class="" style="max-width: 1000px; box-sizing: border-box; display: block; margin-left: auto; margin-right: auto;" >
         <img class="value-img" src="images/land.svg">
       </div>
     </div>
@@ -56,9 +66,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="mysection" id="intro">
-      <img class="mypic" src="images/me.svg" alt="me">
+      <img class="mypic" style="margin-bottom: 10px;" src="images/me.svg" alt="me">
       <h4 class="fontcolor textcenter texttitle hi">Hi.</h4>
-      <div class="textslim">
+      <div class="textslim" style="margin-top: 30px;">
         <p class="myfont textcenter">I'm a web designer / developer based in Malang, Indonesia. I have a passion for web design and love to create for web and mobile devices.</p>
       </div>
     </div>
@@ -67,15 +77,16 @@
     <!-- 3rd Layer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="mysection" id="intro">
-    <h1 class="fontcolor textcenter beforehi">What I Can Do.</h1>
-    <br>
-    <div class="row">
+    <div style="margin: 46px 0; height: 50px;">
+      <h1 class="fontcolor textcenter beforehi">What I Can Do.</h1>
+    </div>
+    <div class="row" >
       <div class="five columns">
         <br><img class="mypic2" src="images/me-dev.svg" alt="me">
       </div>
       <div class="seven columns">
         <div class="textslim">
-          <h4 class="fontcolor textleft texttitle hi">Design what you want.</h4>
+          <h4 class="fontcolor textleft texttitle hi" style="margin-bottom: 30px;">Design what you want.</h4>
           <p class="myfont textleft">I like to keep it simple. My goals are to focus on typography, content and conveying the messege that you want to send.</p>
         </div>
       </div>
@@ -84,7 +95,7 @@
     <div class="row" style="margin-top: 30px;">
       <div class="seven columns">
         <div class="textslim">
-          <h4 class="fontcolor textleft texttitle hi">Develop what you need.</h4>
+          <h4 class="fontcolor textleft texttitle hi" style="margin-bottom: 30px;">Develop what you need.</h4>
           <p class="myfont textleft">I'm a developer, so I know how to create your website to run accross devices using the latest technologies available.</p>
         </div>
       </div>
@@ -99,28 +110,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="mysection" id="intro" style="margin-top: 70px;">
       <div class="u-full-width">
-        <h4 class="fontcolor textcenter texttitle beforehi">I can help.</h4>
+        <h4 class="fontcolor textcenter texttitle beforehi" style="margin-bottom: 30px;">I can help.</h4>
       </div>
       <br>
       <h4 class="fontcolor textcenter texttitle hi">I'm currently available for freelance work.</h4>
-      <div class="textslim">
+      <div class="textslim" style="margin-top: 30px;">
         <p class="myfont textcenter">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
       </div>
-      <div style="text-align: center;">
-        <a class="button button-primary" href="https://www.instagram.com/wisungyo/">Messege Me</a>
+      <div style="text-align: center; margin-top: 50px;">
+        <!-- <a class="button  button-primary" href="https://www.instagram.com/wisungyo/">Messege Me</a> -->
+        <!-- <button type="button" class="btn btn-secondary btn-lg fontcolor" style="padding: 10px 40px; text-transform: uppercase; background-color: #4ab19a;">Messege Me</button> -->
+        <a href="https://www.instagram.com/wisungyo/" class="btn btn-primary btn-lg"  style="padding: 10px 40px; text-transform: uppercase; background-color: #4ab19a;" tabindex="-1" role="button" aria-disabled="true">Messege Me</a>
+        <br><br>
       </div>
-      <br><br>
     </div>
   </div>
 
-    <!-- Copyright
+  <!-- Copyright
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <section class="copyright bgcolor">
     <p class="fontcolor textcenter">&copy; 2020 <a class="fontcolor" href="#">Wisnu Prasetyo</a> All rights reserved.</p>
   </section>
   
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
