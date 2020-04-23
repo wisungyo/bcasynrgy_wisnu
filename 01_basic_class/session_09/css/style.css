@@ -1,0 +1,68 @@
+.container-full-nav {
+    box-shadow: 0 0 1.5px #666666;
+    padding: 4px 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+}
+.myfont {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+}
+.title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* text-decoration: underline ; */
+}
+.container-full-nav a {
+    color: #666666;
+}
+.container-full-nav .navbar-brand:hover {
+    color: #666666;
+}
+.container-full {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-menu {
+    padding: 0 20px;
+}
+.nav-menu a:hover {
+    text-decoration: none;
+    color: #666666;
+}
+.nav-link {
+    text-decoration: none;
+    color: #666666;
+    text-align: center;
+    /* padding: 0 100px; */
+}
+.nav-link:focus {
+    text-decoration: none;
+    color: #0D8BF0;
+}
+.checked {
+    text-decoration: line-through;
+}
+.close-button {
+    text-align: right;
+}
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    box-shadow: 0 0 1.5px #666666;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.copyright a {
+    color: #666;
+}
+.copyright a:hover {
+    text-decoration: none;
+    color: #666;
+}
