@@ -51,6 +51,10 @@
 .close-button {
     text-align: right;
 }
+.alert {
+    padding-top: .40rem; 
+    padding-bottom: .40rem;
+}
 .copyright {
     font-family: 'Roboto', sans-serif;
     color: #666666;
