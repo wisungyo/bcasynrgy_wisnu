@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title> Wisnu Prasetyo </title>
+</head>
+<body>
+    <!-- NAVIGATION
+    ---------------------------->
+    <div class="container-full-nav">
+        <nav class="navbar navbar-white bg-white">
+            <a class="navbar-brand" href="../myweb.html">
+              <b>Wisnu</b> Website
+            </a>
+            <div class="d-flex flex-row-reverse bd-highlight">
+                <div class="nav-menu">
+                    <a class="p-2 bd-highlight nav-link" href="#"> About </a>
+                </div>
+                <div class="nav-menu">
+                    <a class="p-2 bd-highlight nav-link" href="#"> Contact </a>
+                </div>
+                <div class="nav-menu">
+                    <a id="navbarDropdownMenuLink" class="p-2 bd-highlight nav-link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> Development </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="add-arith.html"> Addition Arithmetic </a>
+                      <a class="dropdown-item" href="reduce-arith.html"> Reduction Arithmetic </a>
+                      <a class="dropdown-item" href="divide-arith.html"> Division Arithmetic </a>
+                      <a class="dropdown-item" href="multi-arith.html"> Multiplication Arithmetic </a>
+                      <a class="dropdown-item" href="to-do-list.html"> To-Do List </a>
+                      <a class="dropdown-item" href="fetchLyric.html"> Fetch Lyric </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- THE START OF CONTENT 
+    ---------------------------->
+    <div class="container-full">
+        <h2 class="myfont title" style="text-align: center;"> JavaScript OOP </h2>
+      
+        <form >
+            <div class="form-row">
+                <div class="form-group col">
+                    <label> Name </label> 
+                    <input id="inputName" type="" class="form-control"> 
+                    <br>
+                    <label> Number </label> 
+                    <input id="inputNumber" type="number" class="form-control">
+                    <br>
+                    <label> Amount </label> 
+                    <input id="inputAmount" type="number" class="form-control">
+                    <br>    
+                    <button type="button" class="btn btn-secondary" style="margin-bottom: 1rem;" onclick="newAccount()"> New eMoney </button>
+                    <div class="form-control" style="height: auto;">
+                        <span id="idName">   </span>
+                        <br>
+                        <span id="idNumber">  </span>
+                        <br>
+                        <span id="idAmount">  </span>
+                        <br>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for=""> Topup </label>
+                    <input id="topup" type="number" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-secondary" style="margin-bottom: 1rem;" onclick="topupAmount()"> Topup </button>
+                    <div class="form-control" style="height: auto;">
+                        <span id="idNameTopup">   </span>
+                        <br>
+                        <span id="idNumberTopup">  </span>
+                        <br>
+                        <span id="idAmountTopup">  </span>
+                        <br>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for=""> Transfer </label>
+                    <input id="transfer" type="number" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-secondary" style="margin-bottom: 1rem;" onclick="transferAmount()"> Transfer </button>
+                    <div class="form-control" style="height: auto;">
+                        <span id="idNameTransfer">   </span>
+                        <br>
+                        <span id="idNumberTransfer">  </span>
+                        <br>
+                        <span id="idAmountTransfer">  </span>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- THE END OF CONTENT 
+    ---------------------------->
+      
+    <!-- FOOTER
+    ---------------------------->
+    <div class="copyright">
+        &copy; 2020 &nbsp; | &nbsp; <a href="https://www.instagram.com/wisungyo/"> Wisnu Prasetyo </a>
+    </div>
+
+    <!-- SCRIPT
+    ---------------------------->
+    <script src="../js/script.js"></script>
+    <script src="../js/oop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
