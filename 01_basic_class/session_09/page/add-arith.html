@@ -27,11 +27,11 @@
                 <div class="nav-menu">
                     <a id="navbarDropdownMenuLink" class="p-2 bd-highlight nav-link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> Development </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="add-arith.html"> Addition Arithmetic </a>
-                        <a class="dropdown-item" href="reduce-arith.html"> Reduction Arithmetic </a>
-                        <a class="dropdown-item" href="divide-arith.html"> Division Arithmetic </a>
-                        <a class="dropdown-item" href="multi-arith.html"> Multiplication Arithmetic </a>
-                        <a class="dropdown-item" href="to-do-list.html"> To-Do List </a>
+                      <a class="dropdown-item" href="add-arith.html"> Addition Arithmetic </a>
+                      <a class="dropdown-item" href="reduce-arith.html"> Reduction Arithmetic </a>
+                      <a class="dropdown-item" href="divide-arith.html"> Division Arithmetic </a>
+                      <a class="dropdown-item" href="multi-arith.html"> Multiplication Arithmetic </a>
+                      <a class="dropdown-item" href="to-do-list.html"> To-Do List </a>
                     </div>
                 </div>
             </div>
@@ -41,34 +41,49 @@
     <!-- THE START OF CONTENT 
     ---------------------------->
     <div class="container-full">
-        <h2 class="myfont title" style="text-align: center;"> To Do List </h2>
-        
-        <div class="myfont">
+      <h2 class="myfont title" style="text-align: center;"> Addition Arithmetic </h2>
+      
+      <form class="myfont">
+        <div class="form-row">
+          <div class="col">
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label> Add To-Do List </label>
-                <input id="myInput" class="form-control">
-                <button type="submit" class="btn btn-secondary" style="margin-top: 10px;" onclick="addList()"> Add </button>
+              <div class="form-group col">
+                <label> First Number </label>
+                <input id="theFirst" type="number" class="form-control">
               </div>
-              <div class="form-group col-md-5">
-                <div id="idAnswer" class="answer">
-                    <label> Need To Do </label>
-                    <div class="alert alert-secondary" role="alert">
-                        to do list will be added below !
-                    </div>
-                </div>
-              </div>
-              <div id="idButton" class="form-group col-md-1" style="text-align: center;">
-                <label> Button </label>
-                <br>
-                <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                    
-                    <button type="button" class="btn btn-danger btn-block">x</button>
-                <!-- </div> -->
-
+              <div class="form-group col">
+                <label> Second Number </label>
+                <input id="theSecond" type="number" class="form-control">
               </div>
             </div>
+            
+            <div class="form-row form-group" style="padding: 0 5px">
+              <button type="button" class="btn btn-secondary btn-block" onclick="addFunc()"> Process </button>
+            </div>
+            
+            <div class="form-row" style="padding: 0 5px">
+              <label> Changing Color Result </label>
+              <div id="changeThis" class="alert alert-secondary form-control" style="text-align: center;"> Take a look at this background color </div>
+            </div>
+
+            <div class="form-row form-group" style="padding: 0 5px">
+                <label> Parsing Into Words </label>
+                <div id="parsing" class="alert alert-secondary form-control" style="text-align: center;"> &nbsp; </div>
+            </div>
+          </div>
+
+          <div class="form-group col">
+            <label for="inputPassword4"> Read Me.txt </label>
+            <div class="form-control" style="height: auto;">
+              <p> First of all, enter two numbers into first and second column. </p> 
+              <p> Hit <b>Process</b> button to procced </p>
+              <p> Take a look at the third column. By the default the color is grey. It will change the color according to the process result. </p>
+              <p> The color will turn to <b> green </b> if the result is even, turn <b> yellow </b> if odd, and turn to <b> blue </b> if the result is zero. </p>
+              <p> The last column will parse you the result from numbering format into word format. </p>
+            </div>
+          </div>
         </div>
+      </form>
     </div>
     <!-- THE END OF CONTENT 
     ---------------------------->
@@ -76,14 +91,11 @@
     <!-- FOOTER
     ---------------------------->
     <div class="copyright">
-        &copy; 2020 &nbsp; | &nbsp; <a href="https://www.instagram.com/wisungyo/"> Wisnu Prasetyo </a> &nbsp; | &nbsp; All Right Reserved
+        &copy; 2020 &nbsp; | &nbsp; <a href="https://www.instagram.com/wisungyo/"> Wisnu Prasetyo </a>
     </div>
 
     <!-- SCRIPT
     ---------------------------->
-    <script>
-       
-    </script>
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

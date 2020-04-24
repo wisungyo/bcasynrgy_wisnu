@@ -27,10 +27,10 @@
                 <div class="nav-menu">
                     <a id="navbarDropdownMenuLink" class="p-2 bd-highlight nav-link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> Development </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="arit-jumlah.html"> Aritmatika Penjumlahan</a>
-                      <a class="dropdown-item" href="#"> Aritmatika Pengurangan </a>
-                      <a class="dropdown-item" href="#"> Aritmatika Pembagian </a>
-                      <a class="dropdown-item" href="#"> Aritmatika Perkalian </a>
+                      <a class="dropdown-item" href="add-arith.html"> Addition Arithmetic </a>
+                      <a class="dropdown-item" href="reduce-arith.html"> Reduction Arithmetic </a>
+                      <a class="dropdown-item" href="divide-arith.html"> Division Arithmetic </a>
+                      <a class="dropdown-item" href="multi-arith.html"> Multiplication Arithmetic </a>
                       <a class="dropdown-item" href="to-do-list.html"> To-Do List </a>
                     </div>
                 </div>
@@ -41,25 +41,49 @@
     <!-- THE START OF CONTENT 
     ---------------------------->
     <div class="container-full">
-        <h2 class="myfont title" style="text-align: center;"> Aritmatika Penjumlahan </h2>
-        
-        <form class="myfont">
+      <h2 class="myfont title" style="text-align: center;"> Division Arithmetic </h2>
+      
+      <form class="myfont">
+        <div class="form-row">
+          <div class="col">
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4"> Input #1 Number </label>
-                <input type="email" class="form-control" id="inputEmail4">
+              <div class="form-group col">
+                <label> First Number </label>
+                <input id="theFirst" type="number" class="form-control">
               </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4"> Input #2 Number</label>
-                <input type="password" class="form-control" id="inputPassword4">
+              <div class="form-group col">
+                <label> Second Number </label>
+                <input id="theSecond" type="number" class="form-control">
               </div>
             </div>
-            <div class="form-group">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            
+            <div class="form-row form-group" style="padding: 0 5px">
+              <button type="button" class="btn btn-secondary btn-block" onclick="divideFunc()"> Process </button>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
+            
+            <div class="form-row" style="padding: 0 5px">
+              <label> Changing Color Result </label>
+              <div id="changeThis" class="alert alert-secondary form-control" style="text-align: center;"> Take a look at this background color </div>
+            </div>
+
+            <div class="form-row form-group" style="padding: 0 5px">
+                <label> Parsing Into Words </label>
+                <div id="parsing" class="alert alert-secondary form-control" style="text-align: center;"> &nbsp; </div>
+            </div>
+          </div>
+
+          <div class="form-group col">
+            <label for="inputPassword4"> Read Me.txt </label>
+            <div class="form-control" style="height: auto;">
+              <p> First of all, enter two numbers into first and second column. </p> 
+              <p> Hit <b>Process</b> button to procced </p>
+              <p> Take a look at the third column. By the default the color is grey. It will change the color according to the process result. </p>
+              <p> The color will turn to <b> green </b> if the result is even, turn <b> yellow </b> if odd, and turn to <b> blue </b> if the result is zero. </p>
+              <p> The last column will parse you the result from numbering format into word format. </p>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
     <!-- THE END OF CONTENT 
     ---------------------------->

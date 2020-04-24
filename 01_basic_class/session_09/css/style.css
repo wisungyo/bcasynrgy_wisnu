@@ -45,6 +45,17 @@
     text-decoration: none;
     color: #0D8BF0;
 }
+.dropdown-menu {
+    left: auto;
+}
+.btn-block {
+    display: block;
+    padding: .375rem .75rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
 .checked {
     text-decoration: line-through;
 }
@@ -54,6 +65,9 @@
 .alert {
     padding-top: .40rem; 
     padding-bottom: .40rem;
+}
+#parsing {
+    height: auto;
 }
 .copyright {
     font-family: 'Roboto', sans-serif;
