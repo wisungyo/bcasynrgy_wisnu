@@ -11,7 +11,6 @@
 .title {
     margin-top: 10px;
     margin-bottom: 20px;
-    /* text-decoration: underline ; */
 }
 .container-full-nav a {
     color: #666666;
@@ -48,13 +47,29 @@
 .dropdown-menu {
     left: auto;
 }
+.alert-inline-block {
+    display: inline-block;
+    width: 80%;
+    margin-right: 5px;
+}
+.btn-group {
+    margin-top: -1px;
+}
+input::placeholder {
+    font-style: italic;
+    
+}
+#todotext {
+    cursor: pointer;
+}
+.checkIt {
+    text-decoration: line-through;
+    font-style: italic;
+    background-color: grey;
+    color: ivory;
+}
 .btn-block {
     display: block;
-    /* padding: .375rem .75rem;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem; */
 }
 .checked {
     text-decoration: line-through;

@@ -1,32 +1,57 @@
+const todoList = document.querySelector("#idAnswer");
+const enterInput = document.getElementById("myInput");
+
+enterInput.addEventListener("keyup", function(event) {
+    // 13 is ENTER key
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("addButton").click();
+    }
+})
+
+todoList.addEventListener('click', deleteCheck);
+
 function addList() {
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
+    var para0 = document.createElement("div");
     var para = document.createElement("div");
     para.classList.add("alert");
     para.classList.add("alert-secondary");
+    para.classList.add("alert-inline-block");
+    para.setAttribute("id", "todotext");
     para.appendChild(t);
+    para0.appendChild(para);
 
-    var para2 = document.createElement("button");
-    var t2 = document.createTextNode("x");
-    para2.classList.add("btn");
-    para2.classList.add("btn-danger");
-    para2.classList.add("btn-block");
-    para2.appendChild(t2);
-
-    // var buttons = '<div class="btn-group" role="group" aria-label="Basic example">' + 
-    //               '<button type="button" class="btn btn-info">v</button>' +
-    //               '<button type="button" class="btn btn-secondary">x</button>' +
-    //               'button type="button" class="btn btn-dark">x</button>' +
-    //               '</div>';
-    // addElement('idButton',);
+    var para2 = document.createElement("div");
+    para2.classList.add("btn-group");
+    para0.appendChild(para2);
+    var para4 = document.createElement("button");
+    para4.classList.add("btn");
+    para4.classList.add("btn-danger");
+    para4.innerHTML = 'x';
+    para2.appendChild(para4);
 
     if (inputValue === '') {
         alert("You must write something!");
     } else {
-        document.getElementById("idAnswer").appendChild(para);
-        document.getElementById("idButton").appendChild(para2);
+        document.getElementById("idAnswer").appendChild(para0);
     }
     document.getElementById('myInput').value = "";
+}
+
+function deleteCheck(event) {
+    const deleteItem = event.target;
+    if(deleteItem.classList[1] === 'btn-danger') {
+        const todo1 = deleteItem.parentElement.parentElement;
+        console.log('removed');
+        todo1.remove();
+
+    } else if (deleteItem.classList[2] === 'alert-inline-block') {
+        console.log('the text');
+        deleteItem.classList.toggle('checkIt');
+        
+    }
 }
 
 /* 
