@@ -4,12 +4,12 @@ const userRoutes = (app, fs) => {
     var dataPath = './data/cities.txt';
     console.log(dataPath);
 
-    var inputCities = "/cities";
-    var inputCity = "/city";
-    var inputDefault = "/";
+    // var inputCities = "/cities";
+    // var inputCity = "/city";
+    // var inputDefault = "/";
     
     // READ
-    app.get(inputCities, (req, res) => {
+    app.get('/cities', (req, res) => {
         fs.readFile(dataPath, 'utf8', (err, data) => {
             if (err) {
                 throw err;
@@ -18,7 +18,7 @@ const userRoutes = (app, fs) => {
         });
     });
 
-    app.get(inputCity, (req, res) => {
+    app.get('/city', (req, res) => {
         fs.readFile(dataPath, 'utf8', (err, data) => {
             if (err) {
                 throw err;
@@ -27,6 +27,19 @@ const userRoutes = (app, fs) => {
             random = 1 + Math.floor(Math.random()*7);
             res.send(result[random]);
         });
+    })
+
+    app.get('/:something', (req, res) => {
+        const other = req.params.otherURL;
+        if (other === '/') {
+            res.send(200).json({
+                message: 'You reach the route'
+            });
+        } else {
+            res.status(404).json({
+                message: 'Why are you here? I think you have lost.'
+            });
+        }
     })
 };
 
