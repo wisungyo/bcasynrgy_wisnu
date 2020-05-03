@@ -1,0 +1,9 @@
+[
+    {"city":"Oklahoma", "country":"USA"},
+    {"city":"Bangkok", "country":"Thailand"},
+    {"city":"Osaka", "country":"Japan"},
+    {"city":"Berlin", "country":"germany"},
+    {"city":"Yogyakarta", "country":"Indonesia"},
+    {"city":"Seoul", "country":"South Korea"},
+    {"city":"Cairo", "country":"Egypt"}
+]
