@@ -31,9 +31,9 @@ const userRoutes = (app, fs) => {
 
     app.get('/:something', (req, res) => {
         const other = req.params.otherURL;
-        if (other === '/') {
-            res.send(200).json({
-                message: 'You reach the route'
+        if (other === 'everythingIsError') {
+            res.send(404).json({
+                message: 'Why are you here? I think you have lost..'
             });
         } else {
             res.status(404).json({
